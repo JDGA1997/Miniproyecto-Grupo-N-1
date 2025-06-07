@@ -24,7 +24,7 @@
           <tbody>
             <tr>
               <td> Astrid Viñuela </td>
-              <td>  </td>
+              <td> AstridV23 </td>
               <td>
                 <a href="https://github.com/">
                   <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
