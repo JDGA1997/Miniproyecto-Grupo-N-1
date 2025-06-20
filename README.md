@@ -9,6 +9,8 @@
 
 ---
 
+<div align="left">
+
 ## 📋 Acerca del Proyecto
 
 Este proyecto consiste en el desarrollo de una aplicación de escritorio multifuncional creada con Python y la biblioteca Tkinter. El objetivo es unificar las funcionalidades de cuatro miniproyectos individuales en una sola interfaz gráfica, creando una herramienta práctica para la organización y el registro de eventos.
@@ -19,15 +21,15 @@ La aplicación final busca ser un organizador de eventos completo, permitiendo a
 
 La aplicación integra los siguientes módulos en una interfaz unificada:
 
-**Gestión de Eventos:** Crea y organiza diferentes tipos de eventos.
+✅**Gestión de Eventos:** Crea y organiza diferentes tipos de eventos.
 
-**Servicios Adicionales:** Agrega y personaliza servicios como catering, cotillón, bebidas y decoración.
+✅**Servicios Adicionales:** Agrega y personaliza servicios como catering, cotillón, bebidas y decoración.
 
-**Registro de Fechas:** Utiliza calendarios y listas desplegables para registrar la fecha y hora del evento y de la reserva, minimizando errores.
+✅**Registro de Fechas:** Utiliza calendarios y listas desplegables para registrar la fecha y hora del evento y de la reserva, minimizando errores.
 
-**Lista de Tareas:** Administra tareas pendientes para cada evento con funciones para agregar y eliminar ítems.
+✅**Lista de Tareas:** Administra tareas pendientes para cada evento con funciones para agregar y eliminar ítems.
 
-**Registro Automático:** Guarda automáticamente la fecha y hora de creación de cada nuevo evento o tarea.
+✅**Registro Automático:** Guarda automáticamente la fecha y hora de creación de cada nuevo evento o tarea.
 
 ---
 
@@ -35,13 +37,15 @@ La aplicación integra los siguientes módulos en una interfaz unificada:
 
 Este proyecto fue construido utilizando las siguientes tecnologías:
 
-**Python:** Lenguaje principal para el desarrollo de la lógica de la aplicación.
+- **Python:** Lenguaje principal para el desarrollo de la lógica de la aplicación.
 
-**Tkinter:** Biblioteca estándar de Python utilizada para crear la interfaz gráfica de usuario (GUI).
+- **Tkinter:** Biblioteca estándar de Python utilizada para crear la interfaz gráfica de usuario (GUI).
 
-**Time:** Para la lógica, la interactividad y la manipulación del DOM.
+- **Time:** Para la lógica, la interactividad y la manipulación del DOM.
 
-**Messagebox (Tkinter):** Para mostrar notificaciones y alertas al usuario de forma nativa.
+- **Messagebox (Tkinter):** Para mostrar notificaciones y alertas al usuario de forma nativa.
+
+</div>
 
 ---
 
