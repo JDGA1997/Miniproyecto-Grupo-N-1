@@ -50,9 +50,9 @@
             </tr>
             <tr>
               <td> Juan Pablo Nuñez </td>
-              <td>  </td>
+              <td> Juampinz </td>
               <td>
-                <a href="https://github.com/">
+                <a href="https://github.com/Juampinz">
                   <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
                 </a>
               </td>
