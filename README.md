@@ -41,7 +41,7 @@
             </tr>
             <tr>
               <td> Priscila Abril Quintana </td>
-              <td>  </td>
+              <td> priscilq </td>
               <td>
                 <a href="https://github.com/">
                   <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
