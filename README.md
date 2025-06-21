@@ -52,7 +52,7 @@ Este proyecto fue construido utilizando las siguientes tecnologías:
   ├── main.py                     # Punto de entrada (inicializa la ventana)
   │ 
   ├── ui/
-  │   ├── ventana_principal.py          # Configura ventana principal
+  │   ├── ventana_principal.py          # Configuración de la ventana principal
   │   ├── nuevo_evento.py         # Lógica de la ventana "Nuevo Evento"
   │   ├── eventos_existentes.py   # Lógica de la ventana "Eventos existentes"
   │   └── cancelar_evento.py      # Lógica de la ventana "Cancelar Evento"
