@@ -1,4 +1,4 @@
-from tkinter import messagebox
+from tkinter import messagebox, Toplevel
 import tkinter as tk 
 import time
 import os
@@ -14,7 +14,7 @@ ventana = tk.Tk()
 ventana.title("Gestor de Eventos")
 
 # Tamaño
-ventana.geometry("650x450")
+ventana.geometry("450x450")
 ventana.resizable(False, False)
 
 # Ruta absoluta a la carpeta del script
@@ -43,13 +43,13 @@ text.config(font=("Arial", 20), fg="blue")
 text.pack(anchor='e', pady=(10, 0), padx=20)
 
 # Descripción
-descripcion = tk.Label(ventana, text="Gestiona, organiza y controla tus eventos fácilmente\n\n", padx=20)
+descripcion = tk.Label(ventana, text="Gestiona, organiza y controla tus eventos fácilmente\n", padx=20, wraplength=250)
 descripcion.config(font=("Arial", 12))
 descripcion.pack(anchor='e', pady=(0, 10), padx=20)
 
 # Reloj en tiempo real
 reloj = tk.Label(ventana, font=('Arial', 14), fg='black')
-reloj.pack(anchor='e', pady=5, padx=20)
+reloj.pack(anchor='e', pady=5, padx=20, side='right')
 
 # Función para actualizar el reloj cada segundo
 def actualizar_reloj():
@@ -63,13 +63,39 @@ actualizar_reloj()  # Inicia el reloj
 
 # Definir funciones que serán llamadas desde el menú
 def nuevo_evento():
-    messagebox.showinfo("Nuevo evento", "Aquí puedes crear un nuevo evento.")
+    nv = tk.Toplevel(ventana)
+    nv.title("Nuevo Evento")
+    nv.geometry("300x200")
+    nv.iconbitmap(icon_path)
+    
+    # Aquí va el formulario de la ventana
+    
+    #
+    
+
+
 
 def eventos_existentes():
-    messagebox.showinfo("Eventos existentes", "Aquí se mostrarán los eventos.")
+    nv = tk.Toplevel(ventana)
+    nv.title("Lista de Eventos")
+    nv.geometry("300x200")
+    nv.iconbitmap(icon_path)
+    
+    # Aquí va la logica de la ventana
+    
+    #
+    
 
 def cancelar_evento():
-    messagebox.showinfo("Cancelar evento", "Aquí puedes cancelar un evento.")
+    nv = tk.Toplevel(ventana)
+    nv.title("Cancelar Eventos")
+    nv.geometry("300x200")
+    nv.iconbitmap(icon_path)
+    
+    # Aquí va la logica de la ventana
+    
+    #
+
 
 # Crear la barra de menú
 barra_menu = tk.Menu(ventana)
