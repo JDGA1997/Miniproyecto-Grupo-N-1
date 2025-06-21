@@ -1,0 +1,22 @@
+# Archivos y carpetas a ignorar por git
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.env
+.venv/
+venv/
+ENV/
+.envrc
+.idea/
+.vscode/
+
+src/ui/__pycache__/cancelar_evento.cpython-312.pyc
+src/ui/__pycache__/eventos_existentes.cpython-312.pyc
+src/ui/__pycache__/nuevo_evento.cpython-312.pyc
+src/ui/__pycache__/ventana_principal.cpython-312.pyc
+src/utils/__pycache__/reloj.cpython-312.pyc
