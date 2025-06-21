@@ -45,6 +45,27 @@ Este proyecto fue construido utilizando las siguientes tecnologías:
 
 - **Messagebox (Tkinter):** Para mostrar notificaciones y alertas al usuario de forma nativa.
 
+## 📂 Estructura del proyecto
+```sh
+  src/
+  │
+  ├── main.py                     # Punto de entrada (inicializa la ventana)
+  │ 
+  ├── ui/
+  │   ├── ventana_principal.py          # Configuración de la ventana principal
+  │   ├── nuevo_evento.py         # Lógica de la ventana "Nuevo Evento"
+  │   ├── eventos_existentes.py   # Lógica de la ventana "Eventos existentes"
+  │   └── cancelar_evento.py      # Lógica de la ventana "Cancelar Evento"
+  │
+  ├── assets/                    # Recursos extra como imagenes o iconos
+  │   ├── logo.png
+  │   └── events_icon.ico
+  │
+  └── utils/
+      └── reloj.py                # Función para mostrar reloj en tiempo real
+
+```
+
 </div>
 
 ---
