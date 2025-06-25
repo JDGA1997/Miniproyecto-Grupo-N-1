@@ -1,0 +1,18 @@
+[
+    {
+        "tipo": "Fiesta",
+        "fecha": "25/06/2025",
+        "hora": "00:00",
+        "cantidad_personas": 6,
+        "servicios": "Música",
+        "creado_el": "25/06/2025 19:36:48"
+    },
+    {
+        "tipo": "Aniversario",
+        "fecha": "27/06/2025",
+        "hora": "00:00",
+        "cantidad_personas": 5,
+        "servicios": "Decoración",
+        "creado_el": "25/06/2025 20:05:26"
+    }
+]
