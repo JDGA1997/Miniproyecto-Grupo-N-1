@@ -5,8 +5,11 @@ from models.evento import Evento
 # Clase para manejar la lista de eventos
 
 class ColeccionEventos:
-    def __init__(self, archivo="eventos.json"):
-        self.archivo = archivo
+    def __init__(self):
+        # Ruta absoluta al archivo eventos.json dentro de /src/
+        base_dir = os.path.dirname(os.path.abspath(__file__)) 
+        self.archivo = os.path.join(base_dir, "..", "eventos.json") 
+        self.archivo = os.path.normpath(self.archivo)
         self.eventos = []
         self.cargar_eventos()
 
