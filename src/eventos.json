@@ -14,5 +14,13 @@
         "cantidad_personas": 5,
         "servicios": "Decoración",
         "creado_el": "25/06/2025 20:05:26"
+    },
+    {
+        "tipo": "Baby Shower",
+        "fecha": "04/07/2025",
+        "hora": "06:50",
+        "cantidad_personas": 6,
+        "servicios": "Catering",
+        "creado_el": "25/06/2025 22:13:57"
     }
 ]

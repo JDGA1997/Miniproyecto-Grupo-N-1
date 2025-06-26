@@ -19,6 +19,7 @@ def eventos_existentes(ventana, icon_path):
     scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
     
     lista = tk.Listbox(marco, yscrollcommand=scrollbar.set)
+    coleccion.cargar_eventos()
     for evento in coleccion.obtener_eventos():
         lista.insert(tk.END, str(evento))
     
