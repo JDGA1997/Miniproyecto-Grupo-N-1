@@ -51,6 +51,7 @@ Este proyecto fue construido utilizando las siguientes tecnologías:
   │
   ├── main.py                     # Punto de entrada (inicializa la ventana)
   ├── eventos.json                # Resguardo de la lista de eventos
+  ├── requirements.txt            # Paquetes requeridos
   │
   ├── models/
   │  ├── coleccion_eventos.py      # clase que se encarga de la lista de eventos y guardar cambios
