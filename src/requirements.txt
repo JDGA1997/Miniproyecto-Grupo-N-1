@@ -1,0 +1,7 @@
+# Requerimientos de paquetes para el proyecto
+# Comando para descargar los paquetes: pip install -r requirements.txt
+# Comando para generar este archivo: pipreqs .
+
+customtkinter==5.2.2
+Pillow==11.2.1
+tkcalendar==1.6.1
