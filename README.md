@@ -81,14 +81,15 @@ Este proyecto fue construido utilizando las siguientes tecnologías:
 Este proyecto fue posible gracias al trabajo colaborativo de nuestro equipo:
 
 | Nombre y Apellido             | Usuario en GitHub                                     | Perfil de GitHub                                                                                                                              |
-| ----------------------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Astrid Viñuela                | `AstridV23`                                           | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AstridV23)      |
-| Karen Belén Aquino            |  `karenbaquino1` | https://github.com/karenbaquino1 
-| Priscila Abril Quintana       | `priscilq`                                            | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/priscilq)     |
-| Juan Pablo Nuñez              | `Juampinz`                                            | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Juampinz)     |
-| Valentino André Cabás         | `Valen-cbs`                                           | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Valen-cbs)     |
-| Abril Silva Fernández         |   | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/#) |
-| Juan Diego González Antoniazzi | `JDGA1997`                                            | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JDGA1997)     |
+| ----------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Astrid Viñuela                | `AstridV23`                   | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AstridV23)   |
+| Karen Belén Aquino            | `karenbaquino1`               | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/karenbaquino1) |
+| Priscila Abril Quintana       | `priscilq`                    | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/priscilq)     |
+| Juan Pablo Nuñez              | `Juampinz`                    | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Juampinz)     |
+| Valentino André Cabás         | `Valen-cbs`                   | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Valen-cbs)     |
+| Abril Silva Fernández         |                               | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/#)            |
+| Juan Diego González Antoniazzi | `JDGA1997`                   | [![GitHub Badge](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JDGA1997)     |
+
 
 ---
 
