@@ -40,6 +40,14 @@ class ColeccionEventos:
             print(f"{len(self.eventos)} eventos cargados.")
         else:
             print("Archivo no encontrado.")
-        
+    
+    def eliminar_evento(self, indice):
+        if 0 <= indice < len(self.eventos):
+            eliminado = self.eventos.pop(indice)
+            self.guardar_eventos()
+            print(f"Evento eliminado: {eliminado}")
+        else:
+            print("Índice fuera de rango.")
+    
     def obtener_eventos(self):
         return self.eventos
