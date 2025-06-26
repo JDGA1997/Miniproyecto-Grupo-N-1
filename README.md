@@ -50,7 +50,12 @@ Este proyecto fue construido utilizando las siguientes tecnologías:
   src/
   │
   ├── main.py                     # Punto de entrada (inicializa la ventana)
-  │ 
+  ├── eventos.json                # Resguardo de la lista de eventos
+  │
+  ├── models/
+  │  ├── coleccion_eventos.py      # clase que se encarga de la lista de eventos y guardar cambios
+  │  ├── evento.py                 # clase evento
+  │
   ├── ui/
   │   ├── ventana_principal.py          # Configuración de la ventana principal
   │   ├── nuevo_evento.py         # Lógica de la ventana "Nuevo Evento"
