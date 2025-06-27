@@ -20,8 +20,14 @@ def eventos_existentes(ventana, icon_path):
     
     lista = tk.Listbox(marco, yscrollcommand=scrollbar.set)
     coleccion.cargar_eventos()
-    for evento in coleccion.obtener_eventos():
-        lista.insert(tk.END, str(evento))
+    eventos = coleccion.obtener_eventos()
+    
+    if eventos:
+        for evento in eventos:
+            lista.insert(tk.END, str(evento))
+    else:
+        lista.insert(tk.END, "No hay eventos registrados")
+        lista.config(state='disabled')  # Deshabilitar selección cuando no hay eventos
     
     lista.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
     
