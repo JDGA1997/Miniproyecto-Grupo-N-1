@@ -33,11 +33,16 @@ def cancelar_evento(ventana, icon_path):
         if seleccion:
             indice = seleccion[0]
             evento_texto = lista.get(indice)
-            confirmado = messagebox.askyesno("Confirmar eliminación", f"¿Estás seguro que querés eliminar este evento?\n\n{evento_texto}")
+            confirmado = messagebox.askyesno("Confirmar eliminación", 
+                                           f"¿Estás seguro que querés eliminar este evento?\n\n{evento_texto}")
             if confirmado:
                 coleccion.eliminar_evento(indice)
                 lista.delete(indice)
                 messagebox.showinfo("Eliminado", "El evento ha sido eliminado con éxito.")
+                
+                # Actualizar la ventana si no quedan eventos
+                if lista.size() == 0:
+                    lista.insert(0, "No hay eventos para mostrar")
         else:
             messagebox.showwarning("Sin selección", "Por favor seleccioná un evento para eliminar.")
 
