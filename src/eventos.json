@@ -30,5 +30,21 @@
         "cantidad_personas": 4,
         "servicios": "Fotografía",
         "creado_el": "27/06/2025 01:25:48"
+    },
+    {
+        "tipo": "Baby Shower",
+        "fecha": "30/06/2025",
+        "hora": "18:20",
+        "cantidad_personas": 10,
+        "servicios": "Fotografía",
+        "creado_el": "28/06/2025 17:33:35"
+    },
+    {
+        "tipo": "15 años",
+        "fecha": "01/07/2025",
+        "hora": "20:00",
+        "cantidad_personas": 6,
+        "servicios": "Música",
+        "creado_el": "28/06/2025 17:37:32"
     }
 ]

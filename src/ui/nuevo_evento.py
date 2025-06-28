@@ -14,7 +14,7 @@ def nuevo_evento(ventana, icon_path):
     
     nv = tk.Toplevel(ventana)
     nv.title("Nuevo Evento")
-    nv.geometry("400x400")
+    nv.geometry("600x300")
     nv.iconbitmap(icon_path)
     
     # Aquí va el formulario de la ventana
@@ -34,9 +34,9 @@ def nuevo_evento(ventana, icon_path):
     info_frame.grid(column=0, row=0, columnspan=2, sticky='ew', pady=(0, 10))
     
     info_label = ttk.Label(info_frame, 
-                          text="⚠️ Importante: La fecha y hora del evento deben ser futuras",
-                          font=("Arial", 9, "bold"),
-                          foreground="orange")
+                            text="⚠️ Importante: La fecha y hora del evento deben ser futuras",
+                            font=("Arial", 9, "bold"),
+                            foreground="orange")
     info_label.pack()
 
     # Tipo de evento
@@ -49,17 +49,26 @@ def nuevo_evento(ventana, icon_path):
     fecha = DateEntry(frame, width=16, background='darkblue', foreground='white', borderwidth=2, date_pattern='dd/mm/yyyy')
     fecha.grid(column=1, row=2)
     
-    # Etiqueta de ayuda para la fecha
-    ttk.Label(frame, text="(Fecha futura)", font=("Arial", 8)).grid(column=1, row=2, sticky='e', padx=(0, 5))
 
     # Hora de realización
     ttk.Label(frame, text="Hora de Realización:").grid(column=0, row=3, sticky='w')
-    hora = ttk.Entry(frame, width=10)
-    hora.insert(0, UI_CONFIG["default_time"])  # Usar configuración
-    hora.grid(column=1, row=3)
-    
-    # Etiqueta de ayuda para el formato de hora
-    ttk.Label(frame, text=f"({UI_CONFIG['time_format']} - Futuro)", font=("Arial", 8)).grid(column=1, row=3, sticky='e', padx=(0, 5))
+
+    # Sub-frame para agrupar hora:minuto juntos
+    hora_frame = ttk.Frame(frame)
+    hora_frame.grid(column=1, row=3, columnspan=3, sticky='w', padx=(20, 0))
+
+    # Combobox para hora
+    hora_cb = ttk.Combobox(hora_frame, width=6, values=[f"{i:02d}" for i in range(24)])
+    hora_cb.set(UI_CONFIG["default_time"].split(":")[0])
+    hora_cb.pack(side='left')
+
+    # Separador ":"
+    ttk.Label(hora_frame, text=":").pack(side='left')
+
+    # Combobox para minutos
+    minuto_cb = ttk.Combobox(hora_frame, width=6, values=[f"{i:02d}" for i in range(0, 60, 5)])
+    minuto_cb.set(UI_CONFIG["default_time"].split(":")[1])
+    minuto_cb.pack(side='left')
 
     # Cantidad de personas
     ttk.Label(frame, text="Cantidad de personas:").grid(column=0, row=4, sticky='w')
@@ -76,7 +85,7 @@ def nuevo_evento(ventana, icon_path):
         try:
             tipo = tipo_evento.get()
             fecha_valor = fecha.get()
-            hora_valor = hora.get()
+            hora_valor = f"{hora_cb.get()}:{minuto_cb.get()}"
             cantidad_valor = cantidad.get()
             servicio = servicios.get()
 
@@ -91,18 +100,20 @@ def nuevo_evento(ventana, icon_path):
                 error_msg += f"\n\n💡 Sugerencia: Pruebe con {fecha_sugerida} a las {hora_sugerida}"
                 
                 respuesta = messagebox.askyesno("Errores de validación", 
-                                              error_msg + "\n\n¿Desea usar la fecha y hora sugeridas?")
+                                                error_msg + "\n\n¿Desea usar la fecha y hora sugeridas?")
                 
                 if respuesta:
                     # Aplicar sugerencias automáticamente
                     from datetime import datetime
                     fecha_obj = datetime.strptime(fecha_sugerida, "%d/%m/%Y").date()
                     fecha.set_date(fecha_obj)
-                    hora.delete(0, tk.END)
-                    hora.insert(0, hora_sugerida)
+                    hora_partes = hora_sugerida.split(":")
+                    hora_cb.set(hora_partes[0])
+                    minuto_cb.set(hora_partes[1])
+
                     messagebox.showinfo("Sugerencia aplicada", 
-                                      f"Se ha establecido la fecha {fecha_sugerida} y hora {hora_sugerida}. "
-                                      "Verifique los demás campos y presione 'Crear Evento' nuevamente.")
+                                        f"Se ha establecido la fecha {fecha_sugerida} y hora {hora_sugerida}. "
+                                        "Verifique los demás campos y presione 'Crear Evento' nuevamente.")
                 return
 
             # Convertir cantidad a entero después de validar
@@ -116,8 +127,8 @@ def nuevo_evento(ventana, icon_path):
             # Limpiar campos después de crear el evento
             tipo_evento.set('')
             servicios.set('')
-            hora.delete(0, tk.END)
-            hora.insert(0, UI_CONFIG["default_time"])
+            hora_cb.set(UI_CONFIG["default_time"].split(":")[0])
+            minuto_cb.set(UI_CONFIG["default_time"].split(":")[1])
             cantidad.delete(0, tk.END)
             cantidad.insert(0, str(UI_CONFIG["default_guests"]))
             
