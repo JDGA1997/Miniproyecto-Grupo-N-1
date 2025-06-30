@@ -6,6 +6,7 @@
 ## Etapa 2: Desarrollo Web
 
 #### Un proyecto de aplicación de escritorio diseñada para la organización, registro y gestión integral de eventos.
+![alt text](image-1.png)
 
 ---
 
@@ -26,15 +27,21 @@ La aplicación final busca ser un organizador de eventos completo, permitiendo a
 - Selección de cantidad de personas con límites
 - Opciones de servicios expandidas
 
+![alt text](image-2.png)
+
 ### Ver Eventos
 - Lista scrolleable de todos los eventos
 - Información completa de cada evento
 - Fecha de creación incluida
 
+![alt text](image-3.png)
+
 ### Cancelar Eventos
 - Selección desde lista
 - Confirmación antes de eliminar
 - Feedback visual del proceso
+
+![alt text](image-4.png)
 
 ### Reloj en Tiempo Real
 - Hora actual de Argentina
@@ -201,6 +208,7 @@ Nuestro tablero Kanban está estructurado con un flujo de trabajo completo que i
 
 El tablero nos permite mantener una visibilidad completa del progreso del proyecto y facilita la colaboración entre todos los miembros del equipo.
 
+![alt text](image.png)
 
 </div>
 
